@@ -133,7 +133,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
   let scopeIcon = isAll ? '🌐 Global' : isUser ? '👤 Usuario' : '🏘️ Chat Actual';
 
     let confirm = `
-🪐 *––––*  *🧸 𝗡𝗮𝗵𝗶𝗶𝗰𝗵𝘂 𝗕𝗼𝘁   🧸*  *––––* 🪐
+🪐 *––––*  *🧸 BOT LU   🧸*  *––––* 🪐
 
    ┏━━━━━━━━━━━━━━━━━━━━┓
    ┃  ⚙️  *PANEL DE CONTROL*
@@ -144,7 +144,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
    ┗━━━━━━━━━━━━━━━━━━━━┛
 
    📡 _Sincronizando cambios en el sistema..._
-   *🧸 𝗡𝗮𝗵𝗶𝗶𝗰𝗵𝘂 𝗕𝗼𝘁 🧸*`.trim()
+   *🧸 BOT LU 🧸*`.trim()
 
   m.reply(confirm)
 }
