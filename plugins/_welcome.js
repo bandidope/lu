@@ -17,11 +17,11 @@ export async function before(m, { conn, groupMetadata }) {
         participants: '0@s.whatsapp.net',
         remoteJid: 'status@broadcast',
         fromMe: false,
-        id: 'Pᴏᴡᴇʀᴇᴅ Bʏ Tᴇᴀᴍ Nɪɢʜᴛᴡɪsʜ 🌀'
+        id: '*Bot Lu 💜*'
       },
       message: {
         contactMessage: {
-          vcard: `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN: Pᴏᴡᴇʀᴇᴅ Bʏ Tᴇᴀᴍ Nɪɢʜᴛᴡɪsʜ 🌀\nitem1.TEL;waid=${
+          vcard: `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN: *Bot Lu 💜*\nitem1.TEL;waid=${
             conn.user.jid.split('@')[0]
           }:${conn.user.jid.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
         }
@@ -54,7 +54,7 @@ export async function before(m, { conn, groupMetadata }) {
     if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
       const welcomeText = customWelcome
         ? customWelcome.replace(/@user/gi, user).replace(/@group/gi, groupName).replace(/@desc/gi, groupDesc)
-        : `✨ *¡Bienvenido/a!* ✨\n\nHola ${user}, es un gusto tenerte en *${groupName}*.\n\n📝 *REGLAS Y INFO:*\n${groupDesc}\n\n> *Pᴏᴡᴇʀᴇᴅ Bʏ Tᴇᴀᴍ Nɪɢʜᴛᴡɪsʜ 🌀*`;
+        : `✨ *¡Bienvenido/a!* ✨\n\nHola ${user}, es un gusto tenerte en *${groupName}*.\n\n📝 *REGLAS Y INFO:*\n${groupDesc}\n\n> *Bot Lu 💜*`;
 
       await conn.sendMessage(m.chat, {
         image: imgBuffer,
